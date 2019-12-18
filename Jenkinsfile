@@ -43,7 +43,7 @@ pipeline {
                 // This runs the container
                 sh "docker container stop authority"
                 sh "docker container rm authority"
-                sh "docker run --name authority -p 8888:8080 --network cofomo --restart always -d authority:${VERSION}"
+                sh "docker run --name authority -p 8889:8082 --network cofomo --restart always -d authority:${VERSION}"
             }
             post {
                  // Cleanup
