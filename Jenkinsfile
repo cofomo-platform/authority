@@ -41,8 +41,8 @@ pipeline {
         stage('Build Docker Container') {
             steps {
                 // This runs the container
-                // sh "docker container stop authority"
-                // sh "docker container rm authority"
+                sh "docker container stop authority"
+                sh "docker container rm authority"
                 sh "docker run --name authority -p 8889:8082 --network cofomo --restart always -d authority:${VERSION}"
             }
             post {
