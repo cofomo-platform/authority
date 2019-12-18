@@ -16,4 +16,4 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Trigger Jenkins Job
-      run: curl -I -u jenkins:${{ secrets.jenkins }} https://jenkins.cofomo.io/job/COFOMO-DISCOVERY/build?token=0sujsKUjkuU1ZGG55ARhLe8uyf&cause=Merged%20into%20master%20branch%20on%20GitHub
+      run: curl -I -u jenkins:${{ secrets.jenkins }} https://jenkins.cofomo.io/job/COFOMO-AUTHORITY/build?token=0sujsKUjkuU1ZGG55ARhLe8uyf&cause=Merged%20into%20master%20branch%20on%20GitHub
