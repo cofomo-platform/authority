@@ -10,7 +10,7 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.cofomo</groupId>
-	<artifactId>authorization</artifactId>
+	<artifactId>authority</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>AuthorizationLibrary</name>
 	<description>Authority Provider Service of Cofomo</description>
