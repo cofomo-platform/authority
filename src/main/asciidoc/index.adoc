@@ -4,9 +4,7 @@ COFOMO-Project, Ilko Hoffmann<ilkohoffmann@posteo.net>
 :icons: font
 :source-highlighter: highlightjs
 :toc: left
-:toclevels: 3
 :sectnums:
-:sectnumlevels: 3
 
 // tag::globalDoc[]
 
@@ -33,27 +31,27 @@ COFOMO-Project, Ilko Hoffmann<ilkohoffmann@posteo.net>
 |Authority API
 |===
 
-=== Authorization Provider API
+== Authorization Provider API
 
 Collection of endpoints to manage authorizations of mobility consumers
 
-==== Get Verifiable Claim
+=== Get Verifiable Claim
 
-===== Sample Request
+==== Sample Request
 include::{snippets}/request-claim/http-request.adoc[]
 
-===== Sample Response
+==== Sample Response
 include::{snippets}/request-claim/http-response.adoc[]
 
 
-==== Validate Verifiable Claim
+=== Validate Verifiable Claim
 
 Validates the RSA256 signature of the VerifiableClaimToken.
 
-===== Sample Request
+==== Sample Request
 include::{snippets}/validate-claim/http-request.adoc[]
 
-===== Sample Response
+==== Sample Response
 include::{snippets}/validate-claim/http-response.adoc[]
 
 // end::globalDoc[]
