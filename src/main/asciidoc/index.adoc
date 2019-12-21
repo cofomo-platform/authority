@@ -4,10 +4,14 @@ COFOMO-Project, Ilko Hoffmann<ilkohoffmann@posteo.net>
 :icons: font
 :source-highlighter: highlightjs
 :toc: left
+:toclevels: 4
 :sectnums:
+:sectnumlevels: 4
 
-== Introduction API
-This is the API documentation of the COFOMO-project. Let´s work together on open markets!
+// tag::globalDoc[]
+
+=== References
+
 [cols="1,2,2", options="header"] 
 |===
 |Name
@@ -31,25 +35,27 @@ This is the API documentation of the COFOMO-project. Let´s work together on ope
 |Authority API
 |===
 
-== Authorization Provider API
+=== Authorization Provider API
 
 Collection of endpoints to manage authorizations of mobility consumers
 
-=== Request Verifiable Claim
+==== Request Verifiable Claim
 
-==== Sample Request
+===== Sample Request
 include::{snippets}/request-claim/http-request.adoc[]
 
-==== Sample Response
+===== Sample Response
 include::{snippets}/request-claim/http-response.adoc[]
 
 
-=== Validate Verifiable Claim
+==== Validate Verifiable Claim
 
 Validates the RSA256 signature of the VerifiableClaimToken.
 
-==== Sample Request
+===== Sample Request
 include::{snippets}/validate-claim/http-request.adoc[]
 
-==== Sample Response
+===== Sample Response
 include::{snippets}/validate-claim/http-response.adoc[]
+
+// end::globalDoc[]
