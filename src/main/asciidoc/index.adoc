@@ -4,9 +4,9 @@ COFOMO-Project, Ilko Hoffmann<ilkohoffmann@posteo.net>
 :icons: font
 :source-highlighter: highlightjs
 :toc: left
-:toclevels: 4
+:toclevels: 3
 :sectnums:
-:sectnumlevels: 4
+:sectnumlevels: 3
 
 // tag::globalDoc[]
 
@@ -30,7 +30,7 @@ COFOMO-Project, Ilko Hoffmann<ilkohoffmann@posteo.net>
 |https://authority.cofomo.io/swagger
 |Interactive test suite of the API
 
-|API
+|icon:rocket[] API
 |https://authority.cofomo.io/api
 |Authority API
 |===
