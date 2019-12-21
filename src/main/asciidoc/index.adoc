@@ -10,8 +10,6 @@ COFOMO-Project, Ilko Hoffmann<ilkohoffmann@posteo.net>
 
 // tag::globalDoc[]
 
-=== References
-
 [cols="1,2,2", options="header"] 
 |===
 |Name
@@ -39,7 +37,7 @@ COFOMO-Project, Ilko Hoffmann<ilkohoffmann@posteo.net>
 
 Collection of endpoints to manage authorizations of mobility consumers
 
-==== Request Verifiable Claim
+==== Get Verifiable Claim
 
 ===== Sample Request
 include::{snippets}/request-claim/http-request.adoc[]
