@@ -43,7 +43,7 @@ spring:
   datasource:
     url: jdbc:mysql://mysql:3306/identity
     username: root	
-    password: cofomo.123
+    password: sLhNB6Kwd7AHx1n
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
