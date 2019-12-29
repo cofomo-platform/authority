@@ -2,6 +2,7 @@ package org.cofomo.authority.controller;
 
 import org.cofomo.authority.api.IAuthentication;
 import org.cofomo.authority.facade.AuthenticationFacade;
+import org.cofomo.authority.utils.JwtDTO;
 import org.cofomo.commons.domain.identity.Credentials;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -27,7 +28,7 @@ public class AuthenticationController implements IAuthentication {
 	@PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	@Operation(summary = "Authenticate consumer")
-	public String authenticate(@RequestBody Credentials credentials) {
+	public JwtDTO authenticate(@RequestBody Credentials credentials) {
 		return facade.authenticate(credentials);
 	}
 

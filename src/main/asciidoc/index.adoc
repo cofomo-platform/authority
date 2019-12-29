@@ -31,7 +31,17 @@ COFOMO-Project, Ilko Hoffmann<ilkohoffmann@posteo.net>
 |Authority API
 |===
 
-== Authorization Provider API
+== Authentication API
+
+=== Authenticate Mobility Consumer
+
+==== Sample Request
+include::{snippets}/authenticate/http-request.adoc[]
+
+==== Sample Response
+include::{snippets}/authenticate/http-response.adoc[]
+
+== Authorization API
 
 Collection of endpoints to manage authorizations of mobility consumers
 
@@ -53,5 +63,6 @@ include::{snippets}/validate-claim/http-request.adoc[]
 
 ==== Sample Response
 include::{snippets}/validate-claim/http-response.adoc[]
+
 
 // end::globalDoc[]

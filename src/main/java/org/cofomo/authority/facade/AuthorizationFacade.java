@@ -24,7 +24,6 @@ public class AuthorizationFacade {
 
 	public JwtDTO requestClaimToken(String authToken, String vct) {
 		String token = null;
-	System.out.println("blaaaaa");
 		if (jwtToken.validateToken(authToken)) {
 			@SuppressWarnings("unchecked")
 			HashMap<String, String> map = (HashMap<String, String>) jwtToken.getClaimFromToken(authToken, "consumer");
