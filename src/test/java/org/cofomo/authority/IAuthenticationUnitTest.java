@@ -84,7 +84,7 @@ public class IAuthenticationUnitTest {
 		this.mockMvc
 				.perform(post("/v1/authenticate").content(objectMapper.writeValueAsString(credential))
 						.contentType(MediaType.APPLICATION_JSON).accept(MediaType.APPLICATION_JSON))
-				.andDo(print()).andExpect(status().isCreated())
+				.andDo(print()).andExpect(status().isOk())
 				.andDo(document("authenticate", preprocessRequest(prettyPrint()), preprocessResponse(prettyPrint()),
 						relaxedRequestFields(
 								fieldWithPath("username").description("Username of mobility consumer").type("String"),
