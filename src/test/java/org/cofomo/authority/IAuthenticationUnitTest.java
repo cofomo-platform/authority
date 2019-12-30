@@ -64,7 +64,7 @@ public class IAuthenticationUnitTest {
 
 		this.mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext)
 				.apply(documentationConfiguration(restDocumentation).uris().withScheme("https")
-						.withHost("authority.cofomo.org").withPort(443))
+						.withHost("authority.cofomo.io/api").withPort(443))
 				.alwaysDo(
 						document("{method-name}", preprocessRequest(prettyPrint()), preprocessResponse(prettyPrint())))
 				.build();

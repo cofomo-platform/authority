@@ -49,8 +49,8 @@ public class ConsumerController implements IConsumer {
 	@GetMapping(path = "/{consumerId}", produces = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.OK)
 	@Operation(summary = "Get mobility provider by id")
-	public Consumer getById(@PathVariable String consumerid) {
-		return facade.getById(consumerid);
+	public Consumer getById(@PathVariable String consumerId) {
+		return facade.getById(consumerId);
 	}
 
 	

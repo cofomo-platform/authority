@@ -65,4 +65,66 @@ include::{snippets}/validate-claim/http-request.adoc[]
 include::{snippets}/validate-claim/http-response.adoc[]
 
 
+== Consumer API
+
+Collection of endpoints to manage Consumers. This is the implementation of the IConsumer interface.
+
+=== Customer Model
+include::{snippets}/consumer-get-by-id/response-fields.adoc[]
+
+=== Get all Consumers
+
+Get all Consumers
+
+==== Sample Request
+include::{snippets}/consumer-get-all/http-request.adoc[]
+
+==== Sample Response
+include::{snippets}/consumer-get-all/http-response.adoc[]
+
+
+=== Get Consumer by Id
+
+Get Consumer by Id
+
+==== Sample Request
+include::{snippets}/consumer-get-by-id/http-request.adoc[]
+
+==== Sample Response
+include::{snippets}/consumer-get-by-id/http-response.adoc[]
+
+
+=== Create Consumer
+
+Create new Consumer.
+
+==== Request Body
+include::{snippets}/consumer-create-consumer/request-fields.adoc[]
+
+==== Sample Response
+include::{snippets}/consumer-create-consumer/http-response.adoc[]
+
+
+=== Update Consumer
+
+Update Consumer.
+
+==== Sample Request
+include::{snippets}/consumer-update-consumer/http-request.adoc[]
+
+==== Sample Response
+include::{snippets}/consumer-update-consumer/http-response.adoc[]
+
+
+=== Delete Consumer
+
+Delete Consumer.
+
+==== Sample Request
+include::{snippets}/consumer-delete-consumer/http-request.adoc[]
+
+==== Sample Response
+include::{snippets}/consumer-delete-consumer/http-response.adoc[]
+
+
 // end::globalDoc[]
