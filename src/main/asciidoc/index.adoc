@@ -33,10 +33,9 @@ COFOMO-Project, Ilko Hoffmann<ilkohoffmann@posteo.net>
 
 == Authentication API
 
-=== Authenticate Mobility Consumer
+=== JWT Payload
 
-==== JWT Payload
-
+[source,options="nowrap"]
 ----	
 {
   "sub": "cofomo",
@@ -50,6 +49,8 @@ COFOMO-Project, Ilko Hoffmann<ilkohoffmann@posteo.net>
 }
 ----
 
+=== Authenticate Mobility Consumer
+
 ==== Sample Request
 include::{snippets}/authenticate/http-request.adoc[]
 
@@ -60,10 +61,9 @@ include::{snippets}/authenticate/http-response.adoc[]
 
 Collection of endpoints to manage authorizations of mobility consumers
 
-=== Get Verifiable Claim
+=== Verifiable Claim Payload
 
-==== Verifiable Claim Payload
-
+[source,options="nowrap"]
 ----	
 {
   "sub": "xMpCOKC5I4INzFCab3WEmw==",
@@ -79,6 +79,8 @@ Collection of endpoints to manage authorizations of mobility consumers
   "iat": 1576665583
 }
 ----
+
+=== Get Verifiable Claim
 
 ==== Sample Request
 include::{snippets}/request-claim/http-request.adoc[]
