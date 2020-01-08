@@ -35,6 +35,22 @@ COFOMO-Project, Ilko Hoffmann<ilkohoffmann@posteo.net>
 
 === Authenticate Mobility Consumer
 
+==== JWT
+
+----	
+// decoded jwt payload
+{
+  "sub": "cofomo",
+  "exp": 1576690210,
+  "iat": 1576672210,
+  "consumer": {
+    "id": "1",
+    "username": "cofomo",
+    "password": "***"
+  }
+}
+----
+
 ==== Sample Request
 include::{snippets}/authenticate/http-request.adoc[]
 
@@ -46,6 +62,25 @@ include::{snippets}/authenticate/http-response.adoc[]
 Collection of endpoints to manage authorizations of mobility consumers
 
 === Get Verifiable Claim
+
+==== Verifiable Claim Model
+
+----	
+// decoded claim payload
+{
+  "sub": "xMpCOKC5I4INzFCab3WEmw==",
+  "vct_test": {
+    "context": "https://www.w3.org/2018/credentials/v1",
+    "type": "vct_test",
+    "owner": "xMpCOKC5I4INzFCab3WEmw==",
+    "issuer": "Authority of vct_test",
+    "validation": "https://authority.cofomo.io/api/v1/authorization/validateClaim",
+    "issuanceDate": "2019-12-18T10:39:43+0000"
+  },
+  "exp": 1576683583,
+  "iat": 1576665583
+}
+----
 
 ==== Sample Request
 include::{snippets}/request-claim/http-request.adoc[]
