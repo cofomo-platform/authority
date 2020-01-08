@@ -35,10 +35,9 @@ COFOMO-Project, Ilko Hoffmann<ilkohoffmann@posteo.net>
 
 === Authenticate Mobility Consumer
 
-==== JWT
+==== JWT Payload
 
 ----	
-// decoded jwt payload
 {
   "sub": "cofomo",
   "exp": 1576690210,
@@ -63,10 +62,9 @@ Collection of endpoints to manage authorizations of mobility consumers
 
 === Get Verifiable Claim
 
-==== Verifiable Claim Model
+==== Verifiable Claim Payload
 
 ----	
-// decoded claim payload
 {
   "sub": "xMpCOKC5I4INzFCab3WEmw==",
   "vct_test": {

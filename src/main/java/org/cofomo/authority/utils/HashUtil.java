@@ -13,7 +13,7 @@ public class HashUtil {
 			byte[] digest = md.digest(hashMe.getBytes());
 			hash = Base64.getEncoder().encodeToString(digest);
 		} catch (NoSuchAlgorithmException e) {
-			System.err.println("Error while hashing");;
+			System.err.println("Error while hashing");
 		}
 		return hash;
 	}
