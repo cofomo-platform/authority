@@ -33,7 +33,6 @@ COFOMO-Project, Ilko Hoffmann<ilkohoffmann@posteo.net>
 
 == Authentication API
 
-=== Hello Wolfenbüttel
 === JWT Payload
 
 [source,options="nowrap"]
