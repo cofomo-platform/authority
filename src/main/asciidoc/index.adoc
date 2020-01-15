@@ -33,10 +33,6 @@ COFOMO-Project, Ilko Hoffmann<ilkohoffmann@posteo.net>
 
 == Authentication API
 
-=== New Section
-
-test
-
 === JWT Payload
 
 [source,options="nowrap"]
